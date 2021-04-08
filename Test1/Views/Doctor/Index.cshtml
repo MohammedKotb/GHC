@@ -1,0 +1,236 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_DoctorLayout.cshtml";
+}
+
+@*<h2>Index</h2>*@
+
+@*<div class="container-fluid" style=" height:580px;display:block;overflow-y:scroll;margin-bottom: 50px;">*@
+<style>
+    *{}
+</style>
+    <div id="profileContainer" class="container-fluid" style="overflow:auto">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card grad" style="background-color: #e0e6e9; border: black 1px solid;">
+                    <div class="card-body">
+                        <div class="container-fluid" style="padding:0px;">
+                            <div class="row">
+                                <div class="col-lg-12"
+                                     style="margin-top: -5px;margin-bottom: 0px;margin-left: 10px;color: #020944; font-size: x-large;font-weight: bold;">
+                                    Total Patients
+                                </div>
+                            </div>
+                            <div class="row " style="padding-left:8% ;margin-top:-5px">
+                                <div class="col-xs-3  " style="color: #b80e85; font-size: 40px;font-weight: bold;">
+                                    <i class="fa fa-users" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-xs-3" style="width: 50%">
+
+                                </div>
+                                <div class="col-xs-3 " style="color: #b80e85; font-size: 40px;font-weight: bold;"
+                                     id="Patientnumber">234</div>
+                            </div>
+                            <div class="row col-lg-12 "
+                                 style="text-align: center;margin-top: -5px;margin-left: 10%;color: #020944; font-size: large;">
+                                Total number of patients
+                            </div>
+                            <!-- end test -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  style="background-color: #e0e6e9" -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card  grad " style="border: black 1px solid;">
+                    <div class="card-body">
+                        <!--  -->
+                        <!--  -->
+                        <div class="container-fluid" style="padding:0px;">
+                            <div class="row">
+                                <div class="col-lg-12"
+                                     style="margin-top: -10px;margin-bottom: 0px;margin-left: 10px;color: #020944; font-size: x-large;font-weight: bold;">
+                                    Appoientments
+                                </div>
+                            </div>
+                            <div class="row " style="padding-left:8% ;margin-top:-5px">
+                                <div class="col-xs-3  " style=" color: #b80e85; font-size: 40px;font-weight: bold;">
+                                    <i class="fa fa-table" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-xs-3" style="width: 50%">
+
+                                </div>
+                                <div class="col-xs-3 " style="color: #b80e85; font-size: 40px;font-weight: bold;"
+                                     id="AppointmentsNumber">190</div>
+                            </div>
+                            <div class="row col-lg-12 text-center"
+                                 style=" margin-top: -5px;margin-left: 3%;color: #020944; font-size: large;">
+                                Total number of Appoientments
+                            </div>
+                            <!-- end test -->
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col-lg-4  ">
+                <div class="card  grad " style="border: black 1px solid;">
+                    <div class="card-body" style="padding: 0px;">
+                        <!-- test -->
+                        <div class="container-fluid ">
+                            <div class="row">
+                                <div class="col-sm-12 " style="background: rgb(131, 133, 138);border-radius: 10px 10px 0 0; color: white;">
+                                    <h1 id="yearCaption" style="text-align: center;">1990</h1>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-sm-5" style="width:50%;">
+                                        <h1 id="dayCaption">28</h1>
+                                    </div>
+                                    <div class="col-sm-7" style="width:50%;">
+                                        <h2 id="monthCaption">May</h2>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row  ">
+            <!--  ---start news--------------------------------------------------------------------------------->
+            <div class="col-lg-8">
+                <div class="card" style=" box-shadow: 1px 2px 5px black;border: black 1px solid; border-radius: 15px;margin-bottom: 20px; ">
+                    <div class="card-body" style="margin: -10px;border-radius: 15px;">
+                        <script type="text/javascript">
+    rssfeed_url = new Array();
+                            rssfeed_url[0] = "https://www.medicinenet.com/rss/dailyhealth.xml";
+                            rssfeed_frame_width = '100%';
+                            rssfeed_frame_height = "510";
+                            rssfeed_scroll = "on";
+                            rssfeed_scroll_step = "6";
+                            rssfeed_scroll_bar = "off";
+                            rssfeed_target = "_blank";
+                            rssfeed_font_size = "18";
+                            rssfeed_font_face = "";
+                            rssfeed_border = "off";
+                            rssfeed_css_url = "";
+                            rssfeed_title = "on";
+                            rssfeed_title_name = "";
+                            rssfeed_title_bgcolor = "#3366ff";
+                            rssfeed_title_color = "#f5f6fa";
+                            rssfeed_title_bgimage = "";
+                            rssfeed_footer = "off";
+
+                            rssfeed_footer_bgcolor = "#fff";
+                            rssfeed_footer_color = "#333";
+                            rssfeed_footer_bgimage = "";
+                            rssfeed_item_title_length = "50";
+                            rssfeed_item_title_color = "#000";
+                            rssfeed_item_bgcolor = "";
+                            rssfeed_item_bgimage = "";
+                            rssfeed_item_border_bottom = "on";
+                            rssfeed_item_source_icon = "off";
+                            rssfeed_item_date = "off";
+                            rssfeed_item_description = "on";
+                            rssfeed_item_description_length = "120";
+                            rssfeed_item_description_color = "#666";
+                            rssfeed_item_description_link_color = "#333";
+                            rssfeed_item_description_tag = "off";
+                            rssfeed_no_items = "0";
+                            rssfeed_cache = "14314cf3dad45052d9bb09bbb5bd5e6f";</script>
+                        <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+                        <!-----End news--------------------------------------------------------------------------------------  -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+                <!---Enter the to do list-->
+                <div class="card grad" style="margin-top: 0px; border: black 1px solid;">
+                    <div class="card-body" style="padding:4px;">
+                        <!---------------------- start to do list ------------------ -->
+                        <div class="ToDo">
+                            <div id="myDIV" class="header">
+                                <h6 style="margin:5px">To Do List</h6>
+                                <input type="text" id="myInput" placeholder="Title...">
+                                <span onclick="newElement()" class="addBtn">Add</span>
+                            </div>
+
+                            <ul id="myUL" class="ToDo">
+                                <li>Hit the gym</li>
+                                <li class="checked">Pay bills</li>
+                                <li>Meet George</li>
+                                <li>Buy eggs</li>
+                                <li>Read a book</li>
+                                <li>Organize office</li>
+                            </ul>
+                        </div>
+                        <!---------------------- End to do list ------------------ -->
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- end row2--->
+      
+        <div class="row ">
+            <h5  style="color:darkblue">&nbsp;&nbsp;  Patient Appointment</h5>
+            <div class="col-md-12">
+                <div class="card table-responsive" style="border-radius:5px">
+                    <div class="card-header">
+                        <input type="button" class="btn btn-outline-primary" value="Upcoming" style="margin-left:30px; border-radius:15px;" />
+                        <input type="button" class="btn btn-outline-primary" value="Today"style="margin-left:30px; border-radius:15px" />
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <table class="table table-striped "style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Patient Name</th>
+                                        <th>Appt Date</th>
+                                        <th>Appt Time</th>
+                                        <th>Status</th>
+                                        <th>#</th>
+                                        <th>#</th>
+                                        <th>#</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @for (int i = 0; i < 10; i++)
+                                    {
+                                        <tr style="margin:-10px">
+                                            <td >
+                                                <img src="../CustomFolder/patient2.jpg" class="rounded-circle TablePhoto" />
+                                                &nbsp; mohamed mm mm
+                                            </td>
+                                            <td>22 nov 2020</td>
+                                            <td>9:00 AM</td>
+                                            <td>Not accepted</td>
+                                            <td >
+                                                <input type="button" class="btn btn-primary" value=" View " style=" border-radius:4px;padding:4px" />
+                                            </td>
+                                            <td>
+                                                <input type="button" class="btn btn-success" value="Accept" style="border-radius:4px;padding:4px " />
+                                            </td>
+                                            <td>
+                                                <input type="button" class="btn btn-danger" value="Cancel" style="border-radius:4px;padding:4px " />
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            
+                      </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
